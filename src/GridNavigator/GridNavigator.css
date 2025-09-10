@@ -1,0 +1,164 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+    background: #fff;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.grid-row {
+    display: flex;
+    gap: 2px; /* Add this line for horizontal gap between cells */
+    margin-bottom: 2px; /* Optional: vertical gap between rows */
+}
+/* Add to GridNavigator.css */
+/* .active-btn {
+    background: #1976d2;
+    color: white;
+} */
+/* filepath: d:\grid_navigator\src\GridNavigator\GridNavigator.css */
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    background: #f5f5f5;
+    padding: 0.5rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.active-btn {
+    background: #1976d2;
+    color: white;
+}
+.navbar-custom {
+    display: flex;
+    align-items: center;
+    background: #263747;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 1.1rem;
+    gap: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 2rem;
+    letter-spacing: 1px;
+}
+
+.navbar-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.dropdown-group label {
+    color: #fff;
+}
+
+.navbar-custom select {
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    border: none;
+    margin-left: 0.2rem;
+}
+
+.navbar-custom button,
+.visualize-btn,
+.clear-btn {
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    border: none;
+    margin-left: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    background: #324960;
+    color: #fff;
+    transition: background 0.2s;
+}
+
+.visualize-btn {
+    background: #43a047;
+    color: #fff;
+    font-weight: bold;
+}
+
+.clear-btn {
+    background: #607d8b;
+}
+
+.active-btn {
+    background: #1976d2 !important;
+    color: #fff !important;
+}
+
+.legend {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background: #fff;
+    color: #263747;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.legend-icon {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    border: 2px solid #263747;
+    margin-right: 0.3rem;
+}
+
+.legend-start {
+    background: green;
+    border-radius: 4px 0 0 4px;
+}
+
+.legend-end {
+    background: red;
+    border-radius: 50%;
+    border: 2px solid #263747;
+}
+
+.legend-wall {
+    background: #222;
+}
+
+.legend-unvisited {
+    background: #fff;
+    border: 2px solid #bdbdbd;
+}
+
+.legend-visited {
+    background: #90caf9;
+}
+
+.legend-path {
+    background: gold;
+}

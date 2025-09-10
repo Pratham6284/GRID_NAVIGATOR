@@ -1,0 +1,46 @@
+.node {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000; /* Black border */
+    display: inline-block;
+    background: white;
+    transition: transform 0.12s cubic-bezier(0.4, 0, 0.2, 1), background 1s;
+    margin: 2px;
+}
+
+.node-start {
+    background: green;
+}
+
+.node-end {
+    background: red;
+}
+
+.node-wall {
+    background: #222;
+}
+
+.node-path {
+    background: gold;
+}
+
+.node-visited {
+    background: #90caf9;
+}
+.node-path-anim {
+    background: gold !important;
+    transform: scale(1.3);
+    z-index: 2;
+    transition: transform 0.15s, background 0.15s;
+}
+
+.node-visited-anim {
+    background: #ffecb3 !important;
+    transform: scale(2);
+    z-index: 2;
+}
+
+.node-marking {
+    transform: scale(1.3);
+    z-index: 2;
+}

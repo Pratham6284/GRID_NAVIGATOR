@@ -1,0 +1,15 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+import GridNavigator from './GridNavigator/GridNavigator';
+
+function App() {
+  return (
+    <div className='App'>
+      <GridNavigator />
+    </div>
+  );
+}
+
+export default App;
